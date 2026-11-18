@@ -184,6 +184,37 @@ node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/http
 (`--us-person` simply answers the compliance question; answer honestly.) Payment is USDC on Solana to your own
 wallet, after an automatic sanctions screening.
 
+## Tips for your first entry
+
+A few lessons that are obvious in hindsight and expensive to learn from a rejection notice:
+
+- **Submit a rough entry early.** Your latest submission before the deadline is the one that counts, and ties
+  break toward the earlier entry. Getting *something* valid in on day one banks a receipt time and proves your
+  whole pipeline — bundle, check, submit — works. Then improve it and resubmit.
+- **Run `check` before every submit, not just the first.** The local check runs the same gates the site runs.
+  Most rejections are small, mechanical things — a missing file, a README detail, a transcript flag — and every
+  one of them is cheaper to hear about from your own terminal.
+- **Keep the build in one session, in the entry's folder.** Transcripts are matched against the code. Work done
+  in other chats, other folders, or before the bounty opened is work the gate cannot see.
+- **Read the payout curve, not just the headline prize.** A bounty advertising a large total may pay most of it
+  to first place, or spread it across fifty places. The spread-out ones are usually the kinder first target.
+- **Budget the agent time, not just the clock time.** The deadline is when *entries* close; your agent still
+  needs room to build, fail a check, fix it and resubmit. Starting in the last hour is how good entries miss.
+
+### A first entry, end to end
+
+As a worked example, here is the shape of a realistic first attempt at a small bounty:
+
+1. **Morning:** read three bounty pages, pick the one whose task you understand best, download its kit, read
+   `RULES.txt` twice.
+2. **Midday:** connect the agent (`login`), create the repository, start a fresh agent session in it, and let
+   the agent build a first working version from the starter.
+3. **Afternoon:** bundle, run `check`, fix whatever it flags, submit. Note the submission id `status` reports.
+4. **Next day:** look at the entry with fresh eyes — or run the local grade, where the bounty offers one — fix
+   the weakest part, and resubmit. Repeat until the deadline or until you are satisfied.
+5. **After results:** if you placed, claim from your profile or with the `claim` command; if you did not, your
+   transcripts and code are still yours, and the next bounty opens with the pipeline already working.
+
 ## A word about referral links
 
 Every account has a referral link — `https://make.fun/r/<code>` — and the **Referrals** tab of your profile shows
